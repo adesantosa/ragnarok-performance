@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d99b9cc0-7585-4dfd-9b1a-010cfc59e1e4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/account.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gatling/scala/ragnarok/Ragnarok.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/gatling/scala/ragnarok/Ragnarok.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +38,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="1y6IDTU5rwp9WLTpBA42fVoTnr6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -51,7 +50,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="ScalaProjectSettings">
     <option name="scala3DisclaimerShown" value="true" />
@@ -67,7 +72,8 @@
       <workItem from="1631565503071" duration="12453000" />
       <workItem from="1631712276541" duration="1065000" />
       <workItem from="1631729291448" duration="1577000" />
-      <workItem from="1631821962891" duration="5465000" />
+      <workItem from="1631821962891" duration="7615000" />
+      <workItem from="1632255107391" duration="2121000" />
     </task>
     <servers />
   </component>
@@ -84,5 +90,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

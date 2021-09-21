@@ -7,8 +7,11 @@ import scala.concurrent.duration.DurationInt
 
 class Ragnarok extends Simulation {
 
-  val httpProtocol = http
-    .baseUrl("http://sheltered-shelf-55259.herokuapp.com/reactive/accounts") // Here is the root for all relative URLs
+//  val httpProtocol = http
+//    .baseUrl("http://sheltered-shelf-55259.herokuapp.com/reactive/accounts") // Here is the root for all relative URLs
+
+  val httpProtocol2 = http
+    .baseUrl("https://tranquil-temple-33251.herokuapp.com/accounts") // Here is the root for all relative URLs
 
   val scn = scenario("List accounts")
     .exec(http("request")
@@ -24,6 +27,14 @@ class Ragnarok extends Simulation {
       .check(status.is(200))
     )
 
+  val scn3 = scenario("Create account - blocking")
+    .exec(http("request")
+      .post("/")
+      .body(RawFileBody("account.json"))
+      .asJson
+      .check(status.is(200))
+    )
+
 //  setUp(scn.inject(atOnceUsers(17)).protocols(httpProtocol))
 
 //  setUp(
@@ -34,9 +45,9 @@ class Ragnarok extends Simulation {
 //  )
 
   setUp(
-    scn2.inject(
+    scn3.inject(
 //      atOnceUsers(1),
-      constantUsersPerSec(30).during(1.minute), // 4
-    ).protocols(httpProtocol)
+      constantUsersPerSec(65).during(1.minute), // 4
+    ).protocols(httpProtocol2)
   )
 }
